@@ -65,7 +65,8 @@ uncomment the call for the testSumAndMultiply() function and see if the test pas
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-    return []
+    return [sum(a,b,c), multiply(a,b,c), a + " and " + b + " and " + c + " sum to 16.", "The product of " + a + " and " + b + " and " + c + " is " + abc + "."]
+
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
