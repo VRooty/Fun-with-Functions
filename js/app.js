@@ -102,16 +102,16 @@ finished, uncomment the call for the testSumArray() function and see if the test
 let testArray = [2, 3, 4]; //eslint-disable-line
 let testArray1 = sum(testArray[0], testArray[1])[0]
 let testArray2 = sum(testArray1, testArray[2])[0]
+let string = testArray + " was passed in as an array of numbers and " + testArray2 + " is their sum." 
         
 
-function sumArray(testArr) { //eslint-disable-line
-        return [testArray2, testArray + 
-            " was passed in as an array of numbers and " + testArray2 + " is their sum."]
+function sumArray(testArray) { //eslint-disable-line
+        return [testArray2, string]
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-testSumArray(testArray);
+testSumArray(testArray1);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -133,15 +133,19 @@ Test this function by hand in the console to get it working, and when you think 
 finished, uncomment the call for the testMultiplyArray() function and see if the test 
 passes.*/
 
-
+let multArr = [2, 3, 4]
+let multArr1 = multiply(multArr[0], multArr[1])[0]
+let multArr2 = multiply(multArr1, multArr[2])[0]
+let string2 = "The numbers " + multArr + "have a product of " + multArr2
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+    return [multArr2, string2]
 
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -151,11 +155,18 @@ function multiplyArray(multArr) { //eslint-disable-line
 
 /////////////////////////////////////
 /* STRETCH GOAL: Problem 6
-Write a function called multiplyAnyArray() that takes an array of numbers of any length as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and concatenates a message using the arguments that were passed into the function:
+Write a function called multiplyAnyArray() that takes an array of numbers of any length as its 
+
+argument and returns an array whose first element is the product of those numbers, and the second
+element is a string that EXACTLY follows this example and concatenates a message using the 
+arguments that were passed into the function:
 
 "The numbers 1,2,3,4,5 have a product of 120."
 
-IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator for string concatenation.
+IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do 
+multiplication, use your multiply() function that you've already created. You're going to have to 
+be resourceful to figure out how to do this. However, you may continue to use the + operator for 
+string concatenation.
 
 This function should be dynamic, accepting an array of any length.
 
